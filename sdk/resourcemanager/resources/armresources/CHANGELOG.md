@@ -20,7 +20,6 @@
 - Struct `ResourceGroupFilter` has been removed
 - Struct `ResourceProviderOperationDisplayProperties` has been removed
 - Struct `SubResource` has been removed
-- Field `TagsResource` of struct `TagsClientCreateOrUpdateAtScopeResponse` has been removed
 
 ### Features Added
 

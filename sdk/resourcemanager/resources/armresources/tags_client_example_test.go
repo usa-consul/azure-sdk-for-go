@@ -42,6 +42,15 @@ func ExampleTagsClient_BeginCreateOrUpdateAtScope_updateTagsOnAResource() {
 	_ = res
 	// If the HTTP response code is 200 as defined in example definition, your response structure would look as follows. Please pay attention that all the values in the output are fake values for just demo purposes.
 	// res = armresources.TagsClientCreateOrUpdateAtScopeResponse{
+	// 	TagsResource: &armresources.TagsResource{
+	// 		ID: to.Ptr("subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/my-resource-group/providers/myPRNameSpace/VM/myVm"),
+	// 		Properties: &armresources.Tags{
+	// 			Tags: map[string]*string{
+	// 				"tagKey1": to.Ptr("tag-value-1"),
+	// 				"tagKey2": to.Ptr("tag-value-2"),
+	// 			},
+	// 		},
+	// 	},
 	// }
 }
 
@@ -75,6 +84,15 @@ func ExampleTagsClient_BeginCreateOrUpdateAtScope_updateTagsOnASubscription() {
 	_ = res
 	// If the HTTP response code is 200 as defined in example definition, your response structure would look as follows. Please pay attention that all the values in the output are fake values for just demo purposes.
 	// res = armresources.TagsClientCreateOrUpdateAtScopeResponse{
+	// 	TagsResource: &armresources.TagsResource{
+	// 		ID: to.Ptr("subscriptions/00000000-0000-0000-0000-000000000000"),
+	// 		Properties: &armresources.Tags{
+	// 			Tags: map[string]*string{
+	// 				"tagKey1": to.Ptr("tag-value-1"),
+	// 				"tagKey2": to.Ptr("tag-value-2"),
+	// 			},
+	// 		},
+	// 	},
 	// }
 }
 
