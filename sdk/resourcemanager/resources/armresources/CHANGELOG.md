@@ -1,5 +1,43 @@
 # Release History
 
+## 4.0.0 (2026-04-09)
+### Breaking Changes
+
+- Function `*Client.BeginCreateOrUpdate` parameter(s) have been changed from `(ctx context.Context, resourceGroupName string, resourceProviderNamespace string, parentResourcePath string, resourceType string, resourceName string, apiVersion string, parameters GenericResource, options *ClientBeginCreateOrUpdateOptions)` to `(ctx context.Context, resourceGroupName string, resourceProviderNamespace string, parentResourcePath string, resourceType string, resourceName string, parameters GenericResource, options *ClientBeginCreateOrUpdateOptions)`
+- Function `*Client.BeginCreateOrUpdateByID` parameter(s) have been changed from `(ctx context.Context, resourceID string, apiVersion string, parameters GenericResource, options *ClientBeginCreateOrUpdateByIDOptions)` to `(ctx context.Context, resourceID string, parameters GenericResource, options *ClientBeginCreateOrUpdateByIDOptions)`
+- Function `*Client.BeginDelete` parameter(s) have been changed from `(ctx context.Context, resourceGroupName string, resourceProviderNamespace string, parentResourcePath string, resourceType string, resourceName string, apiVersion string, options *ClientBeginDeleteOptions)` to `(ctx context.Context, resourceGroupName string, resourceProviderNamespace string, parentResourcePath string, resourceType string, resourceName string, options *ClientBeginDeleteOptions)`
+- Function `*Client.BeginDeleteByID` parameter(s) have been changed from `(ctx context.Context, resourceID string, apiVersion string, options *ClientBeginDeleteByIDOptions)` to `(ctx context.Context, resourceID string, options *ClientBeginDeleteByIDOptions)`
+- Function `*Client.BeginUpdate` parameter(s) have been changed from `(ctx context.Context, resourceGroupName string, resourceProviderNamespace string, parentResourcePath string, resourceType string, resourceName string, apiVersion string, parameters GenericResource, options *ClientBeginUpdateOptions)` to `(ctx context.Context, resourceGroupName string, resourceProviderNamespace string, parentResourcePath string, resourceType string, resourceName string, parameters GenericResource, options *ClientBeginUpdateOptions)`
+- Function `*Client.BeginUpdateByID` parameter(s) have been changed from `(ctx context.Context, resourceID string, apiVersion string, parameters GenericResource, options *ClientBeginUpdateByIDOptions)` to `(ctx context.Context, resourceID string, parameters GenericResource, options *ClientBeginUpdateByIDOptions)`
+- Function `*Client.CheckExistence` parameter(s) have been changed from `(ctx context.Context, resourceGroupName string, resourceProviderNamespace string, parentResourcePath string, resourceType string, resourceName string, apiVersion string, options *ClientCheckExistenceOptions)` to `(ctx context.Context, resourceGroupName string, resourceProviderNamespace string, parentResourcePath string, resourceType string, resourceName string, options *ClientCheckExistenceOptions)`
+- Function `*Client.CheckExistenceByID` parameter(s) have been changed from `(ctx context.Context, resourceID string, apiVersion string, options *ClientCheckExistenceByIDOptions)` to `(ctx context.Context, resourceID string, options *ClientCheckExistenceByIDOptions)`
+- Function `*Client.Get` parameter(s) have been changed from `(ctx context.Context, resourceGroupName string, resourceProviderNamespace string, parentResourcePath string, resourceType string, resourceName string, apiVersion string, options *ClientGetOptions)` to `(ctx context.Context, resourceGroupName string, resourceProviderNamespace string, parentResourcePath string, resourceType string, resourceName string, options *ClientGetOptions)`
+- Function `*Client.GetByID` parameter(s) have been changed from `(ctx context.Context, resourceID string, apiVersion string, options *ClientGetByIDOptions)` to `(ctx context.Context, resourceID string, options *ClientGetByIDOptions)`
+- Type of `ResourceGroupExportResult.Error` has been changed from `*ErrorResponse` to `*ErrorDetail`
+- Struct `ErrorResponse` has been removed
+- Struct `GenericResourceFilter` has been removed
+- Struct `Resource` has been removed
+- Struct `ResourceGroupFilter` has been removed
+- Struct `ResourceProviderOperationDisplayProperties` has been removed
+- Struct `SubResource` has been removed
+- Field `TagsResource` of struct `TagsClientCreateOrUpdateAtScopeResponse` has been removed
+
+### Features Added
+
+- New enum type `ActionType` with values `ActionTypeInternal`
+- New enum type `CreatedByType` with values `CreatedByTypeApplication`, `CreatedByTypeKey`, `CreatedByTypeManagedIdentity`, `CreatedByTypeUser`
+- New enum type `Origin` with values `OriginSystem`, `OriginUser`, `OriginUserSystem`
+- New struct `ErrorDetail`
+- New struct `SystemData`
+- New field `SystemData` in struct `GenericResource`
+- New field `SystemData` in struct `GenericResourceExpanded`
+- New field `ActionType`, `IsDataAction`, `Origin` in struct `Operation`
+- New field `SystemData` in struct `ResourceGroup`
+- New field `RetryAfter` in struct `TagsClientCreateOrUpdateResponse`
+- New field `RetryAfter` in struct `TagsClientCreateOrUpdateValueResponse`
+- New field `SystemData` in struct `TagsResource`
+
+
 ## 3.0.1 (2025-12-17)
 
 ### Other Changes
