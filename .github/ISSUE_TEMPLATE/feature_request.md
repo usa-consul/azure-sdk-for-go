@@ -1,12 +1,33 @@
 ---
-name: Feature Request
-about: Request new features for the Go SDK.
+name: Feature request
+about: Suggest an idea for this project
+title: '[Feature Request] '
+labels: feature-request
+assignees: ''
 ---
 
-### Feature Request
+## Is your feature request related to a problem? Please describe.
 
-<!--
-To help us better serve you, describe the feature you'd like and how it will help you.
+A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
 
-Note that this is for SDK specific features. For Service API feature requests, use https://github.com/Azure/azure-rest-api-specs.
--->
+## Describe the solution you'd like
+
+A clear and concise description of what you want to happen.
+
+## Describe alternatives you've considered
+
+A clear and concise description of any alternative solutions or features you've considered.
+
+## Which Azure service(s) does this affect?
+
+Please list the Azure service(s) or SDK package(s) this feature request relates to.
+- Service/Package name: 
+- Package import path (if known): `github.com/Azure/azure-sdk-for-go/sdk/...`
+
+## Additional context
+
+Add any other context, screenshots, or code samples about the feature request here.
+
+```go
+// Example of how you'd like the API to look:
+```
